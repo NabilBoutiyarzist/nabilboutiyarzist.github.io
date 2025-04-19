@@ -1,0 +1,66 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="rainbow_cloud" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Data integration to the Cloud</h2>
+		<p>Deployment of data integration pipelines via API, ETL, orchestrators (Kestra), or Shell scripts.
+			Implementation of data flow monitoring and incremental ingestion to optimize performance and scalability</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Data transformation and Modeling</h2>
+		<p>Proficient in data transformation and infrastructure tools such as Terraform, DBT, and advanced SQL.
+			Design and implementation of optimized data models (star, snowflake) for efficient analysis and performance</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="analyse" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Data Analysis and Visualization</h2>
+		<p> Development of interactive dashboards and reports with Looker, Power BI.           
+			
+			Addressing ad-hoc data exploration and differents needs, comfortable using Python (Pandas, Scikit-learn ...)</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

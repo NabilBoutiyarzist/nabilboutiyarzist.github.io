@@ -1,0 +1,168 @@
+2025-03-02 21:29:33,480 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:56]: Reading official metadata in /Users/bookair/.studio/db/official.json
+2025-03-02 21:29:33,703 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:77]: Reading unofficial database in /Users/bookair/.studio/db/unofficial.json
+2025-03-02 21:29:33,763 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:56]: Setting up story teller driver
+2025-03-02 21:29:33,764 [DEBUG] [studio.driver.raw.RawStoryTellerAsyncDriver] [RawStoryTellerAsyncDriver.java:65]: Registering hotplug listener
+2025-03-02 21:29:33,767 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 21:29:34,092 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 21:29:34,092 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 21:29:34,097 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:71]: Registering hotplug listener
+2025-03-02 21:29:34,097 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 21:29:34,098 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 21:29:34,098 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 21:29:34,099 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 1
+2025-03-02 21:29:34,103 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:75]: Waiting for device partition...
+2025-03-02 21:29:34,264 [INFO ] [studio.webui.MainVerticle] [MainVerticle.java:105]: Opening URL in default browser...
+2025-03-02 21:29:34,584 [INFO ] [io.vertx.core.impl.launcher.commands.VertxIsolatedDeployer] [:]: Succeeded in deploying verticle
+2025-03-02 21:29:35,184 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:29:35,186 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:29:35,187 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:29:35,187 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:29:35,187 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:29:35,188 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:29:35,188 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:29:35,189 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:29:35,189 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:29:35,189 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:29:35,189 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /Volumes/LUNII
+2025-03-02 21:29:35,189 [INFO ] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:83]: FS device partition located: /Volumes/LUNII
+2025-03-02 21:29:35,191 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:97]: Device 2.x plugged
+2025-03-02 21:29:35,198 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 21:29:35,219 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 1.82% (137.78 MB / 7.39 GB)
+2025-03-02 21:29:35,226 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 21:29:35,238 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 21:29:35,244 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 21:29:35,277 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 21:29:35,279 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 1.82% (137.78 MB / 7.39 GB)
+2025-03-02 21:29:35,279 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 21:29:35,279 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 21:29:35,280 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 21:29:35,300 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 21:29:35,310 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 21:29:35,312 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 2
+2025-03-02 21:29:35,314 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 21:29:35,329 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 21:29:35,333 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 10ms
+2025-03-02 21:29:35,381 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 21:29:35,385 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 21:30:37,114 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 2
+2025-03-02 21:30:37,120 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:113]: Device 2.x unplugged
+2025-03-02 21:31:36,530 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 1
+2025-03-02 21:31:36,533 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:75]: Waiting for device partition...
+2025-03-02 21:31:37,545 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:37,549 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:37,550 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:37,551 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:37,552 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:37,553 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:37,557 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:37,567 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:37,569 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:37,570 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:38,599 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:38,604 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:38,604 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:38,605 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:38,605 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:38,605 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:38,606 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:38,606 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:38,608 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:38,609 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:39,616 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:39,617 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:39,618 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:39,619 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:39,620 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:39,621 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:39,621 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:39,622 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:39,622 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:39,623 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:40,634 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:40,637 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:40,637 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:40,639 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:40,640 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:40,641 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:40,643 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:40,644 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:40,645 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:40,645 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:41,654 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:41,655 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:41,656 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:41,657 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:41,657 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:41,658 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:41,659 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:41,660 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:41,662 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:41,663 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:42,671 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:42,677 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:42,679 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:42,679 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:42,679 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:42,680 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:42,680 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:42,680 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:42,681 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:42,681 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:43,692 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:43,693 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:43,693 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:43,693 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:43,693 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:43,694 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:43,694 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:43,695 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:43,695 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:43,695 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:44,703 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:44,708 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:44,709 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:44,710 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:44,710 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:44,711 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:44,712 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:44,713 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:44,715 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:44,718 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:45,725 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:45,727 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:45,727 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:45,727 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:45,727 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:45,728 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:45,728 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:45,728 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:45,729 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:45,729 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:46,738 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:31:46,742 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:31:46,743 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:31:46,743 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:31:46,744 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:31:46,744 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:31:46,744 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:31:46,745 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:31:46,745 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:31:46,745 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:31:46,747 [ERROR] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:134]: An error occurred while handling device plug event
+java.util.concurrent.CompletionException: studio.core.v1.utils.exception.StoryTellerException: Could not locate device partition
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1792)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: studio.core.v1.utils.exception.StoryTellerException: Could not locate device partition
+	at studio.driver.fs.FsStoryTellerAsyncDriver.lambda$new$2(FsStoryTellerAsyncDriver.java:92)
+	at studio.driver.LibUsbDetectionHelper.lambda$registerCallback$1(LibUsbDetectionHelper.java:133)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1800)
+	... 6 more
+2025-03-02 21:32:37,787 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread
+2025-03-02 21:32:37,785 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread

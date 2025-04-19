@@ -1,0 +1,103 @@
+2025-03-02 21:21:52,162 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:56]: Reading official metadata in /Users/bookair/.studio/db/official.json
+2025-03-02 21:21:52,378 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:77]: Reading unofficial database in /Users/bookair/.studio/db/unofficial.json
+2025-03-02 21:21:52,434 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:56]: Setting up story teller driver
+2025-03-02 21:21:52,436 [DEBUG] [studio.driver.raw.RawStoryTellerAsyncDriver] [RawStoryTellerAsyncDriver.java:65]: Registering hotplug listener
+2025-03-02 21:21:52,438 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 21:21:52,758 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 21:21:52,758 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 21:21:52,763 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:71]: Registering hotplug listener
+2025-03-02 21:21:52,763 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 21:21:52,764 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 21:21:52,764 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 21:21:52,766 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 1
+2025-03-02 21:21:52,769 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:75]: Waiting for device partition...
+2025-03-02 21:21:52,934 [INFO ] [studio.webui.MainVerticle] [MainVerticle.java:105]: Opening URL in default browser...
+2025-03-02 21:21:53,228 [INFO ] [io.vertx.core.impl.launcher.commands.VertxIsolatedDeployer] [:]: Succeeded in deploying verticle
+2025-03-02 21:21:53,786 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 21:21:53,789 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 21:21:53,789 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 21:21:53,791 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 21:21:53,792 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 21:21:53,792 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 21:21:53,792 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 21:21:53,792 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 21:21:53,793 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 21:21:53,793 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 21:21:53,793 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /Volumes/LUNII
+2025-03-02 21:21:53,794 [INFO ] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:83]: FS device partition located: /Volumes/LUNII
+2025-03-02 21:21:53,794 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:97]: Device 2.x plugged
+2025-03-02 21:21:53,802 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 21:21:53,835 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 0.94% (71.28 MB / 7.39 GB)
+2025-03-02 21:21:53,838 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 21:21:53,844 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 21:21:53,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 0.94% (71.28 MB / 7.39 GB)
+2025-03-02 21:21:53,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 21:21:53,846 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 21:21:53,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 21:21:53,849 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 21:21:53,849 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 21:21:53,888 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 21:21:53,891 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 2
+2025-03-02 21:21:53,893 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 21:21:53,908 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 21:21:53,908 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 12ms
+2025-03-02 21:21:53,960 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 21:21:53,961 [ERROR] [studio.webui.api.DeviceController] [DeviceController.java:46]: Failed to read packs from device
+java.util.concurrent.CompletionException: studio.core.v1.utils.exception.StoryTellerException: Failed to read pack metadata on device partition
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:645)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: studio.core.v1.utils.exception.StoryTellerException: Failed to read pack metadata on device partition
+	at studio.driver.fs.FsStoryTellerAsyncDriver.lambda$getPacksList$5(FsStoryTellerAsyncDriver.java:250)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)
+	... 8 more
+Caused by: java.nio.file.NoSuchFileException: /Volumes/LUNII/.content/6A3B498D/ni
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at studio.driver.fs.FsStoryTellerAsyncDriver.lambda$getPacksList$5(FsStoryTellerAsyncDriver.java:235)
+	... 9 more
+2025-03-02 21:21:53,966 [ERROR] [studio.webui.MainVerticle] [MainVerticle.java:95]: Exception thrown
+java.util.concurrent.CompletionException: studio.core.v1.utils.exception.StoryTellerException: Failed to read pack metadata on device partition
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:645)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1769)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: studio.core.v1.utils.exception.StoryTellerException: Failed to read pack metadata on device partition
+	at studio.driver.fs.FsStoryTellerAsyncDriver.lambda$getPacksList$5(FsStoryTellerAsyncDriver.java:250)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:642)
+	... 8 more
+Caused by: java.nio.file.NoSuchFileException: /Volumes/LUNII/.content/6A3B498D/ni
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at studio.driver.fs.FsStoryTellerAsyncDriver.lambda$getPacksList$5(FsStoryTellerAsyncDriver.java:235)
+	... 9 more
+2025-03-02 21:21:53,979 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 21:24:08,880 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread
+2025-03-02 21:24:08,880 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread

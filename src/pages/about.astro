@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Nabil Boutiyarzist" description="About Nabil Boutiyarzist">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/ski.jpeg"
+					alt="Nabil Boutiyarzist in the mountains"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						Coming from a <strong>Master’s degree in Data Science</strong> specialized in training data experts, and with a <strong>background in Computer Science</strong>, I have evolved over the years into a versatile <strong>Data Engineer / Data Analyst</strong>.
+					</p>
+					<div style="height: 8px;"></div>
+					<p>
+						During my career, I’ve had the chance to work on a wide range of <strong>data-driven projects</strong>, including:
+						<ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
+							<li><strong>Cloud data exposure</strong> (GCP)</li>
+							<li><strong>Data transformation & pipeline building</strong> </li>
+							<li><strong>Dashboard development</strong> for end-users and decision-makers</li>
+							<li><strong>Exploratory Data Analysis</strong> involving <strong>Data Science techniques</strong></li>
+						</ul>
+						I’ve had the opportunity to carry out several <strong>end-to-end projects</strong>, from raw data ingestion to delivering meaningful business insights.
+					</p>
+					<div style="height: 8px;"></div>
+					<p>
+						As a <strong>curious and motivated</strong> professional, I’m constantly seeking to <strong>learn new tools, methods, and technologies</strong>. I’m also highly <strong>adaptable</strong> and comfortable working in fast-changing environments.
+					</p>
+					<div style="height: 8px;"></div>
+					<p>
+						With an <strong>open and collaborative mindset</strong>, I place strong importance on <strong>communication, teamwork</strong>, and <strong>knowledge sharing</strong>.
+					</p>					
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8;">
+						<li><strong>Master’s in Information Systems and Decision Support (SIAD)</strong>, University of Lille <em>(Sept. 2022 – July 2024)</em> – <strong>With honors</strong></li>
+						<li><strong>Bachelor’s in Computer Science</strong>, University of Lille <em>(Sept. 2020 – June 2022)</em> – <strong>With honors</strong></li>
+						<li><strong>First Year in Applied Mathematics and Computer Science</strong>, University of Lille <em>(Sept. 2019 – June 2020)</em> – <strong>With honors</strong></li>
+						<li><strong>Scientific Baccalauréat</strong>, France – <strong>With honors</strong></li>
+					</ul>													  
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<strong>Hard Skills</strong>
+					<div style="height: 4px;"></div>
+					<p>
+						SQL,Python,Git,Docker,Power BI, Looker, GCP, Terraform, Kestra (orchestration), Dbt, Semarchy(ETL)
+					</p>
+					<div style="height: 25px;"></div>
+
+					<strong>Soft Skills</strong>
+					<div style="height: 4px;"></div>
+					<p>
+						Curious, Organized, Polyvalent, Team player, Communicative 
+					</p>
+					<div style="height: 25px;"></div>
+					
+					<strong>Languages</strong>
+					<div style="height: 4px;"></div>
+
+					<ul style="list-style-type: none; padding-left: 0; line-height: 1.6;">
+					<li><strong>French:</strong> Native speaker</li>
+					<li><strong>English:</strong> B2 to C1 level <a href="https://www.etsglobal.org/fr/en/digital-score-report/6AEA7CB02DD74D23BAD81308C3F3E6E0EF657296DF53322653D83E1900BDCFAAN0VEYUZtZEFyUkNyY3dEeVRQTTBsVkI4eFFFV1lJZWdCK1JPUzRiWGR5OHBhSDdG">TOEIC</a></li>
+					</ul>
+
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

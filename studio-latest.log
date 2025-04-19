@@ -1,0 +1,862 @@
+2025-03-02 22:12:00,475 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:56]: Reading official metadata in /Users/bookair/.studio/db/official.json
+2025-03-02 22:12:00,625 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:77]: Reading unofficial database in /Users/bookair/.studio/db/unofficial.json
+2025-03-02 22:12:00,706 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:56]: Setting up story teller driver
+2025-03-02 22:12:00,708 [DEBUG] [studio.driver.raw.RawStoryTellerAsyncDriver] [RawStoryTellerAsyncDriver.java:65]: Registering hotplug listener
+2025-03-02 22:12:00,710 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 22:12:01,111 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 22:12:01,111 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 22:12:01,117 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:71]: Registering hotplug listener
+2025-03-02 22:12:01,117 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:58]: Initializing libusb...
+2025-03-02 22:12:01,117 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:76]: Hotplug is supported. Registering hotplug callback(s)...
+2025-03-02 22:12:01,118 [DEBUG] [studio.driver.LibUsbAsyncEventsWorker] [LibUsbAsyncEventsWorker.java:32]: Starting worker thread to handle libusb async events...
+2025-03-02 22:12:01,119 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 1
+2025-03-02 22:12:01,123 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:75]: Waiting for device partition...
+2025-03-02 22:12:01,296 [INFO ] [studio.webui.MainVerticle] [MainVerticle.java:105]: Opening URL in default browser...
+2025-03-02 22:12:01,664 [INFO ] [io.vertx.core.impl.launcher.commands.VertxIsolatedDeployer] [:]: Succeeded in deploying verticle
+2025-03-02 22:12:02,244 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /
+2025-03-02 22:12:02,249 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/VM
+2025-03-02 22:12:02,250 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Preboot
+2025-03-02 22:12:02,250 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update
+2025-03-02 22:12:02,251 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/xarts
+2025-03-02 22:12:02,255 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/iSCPreboot
+2025-03-02 22:12:02,255 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Hardware
+2025-03-02 22:12:02,255 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Data
+2025-03-02 22:12:02,256 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/SFR/mnt1
+2025-03-02 22:12:02,257 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /System/Volumes/Update/mnt1
+2025-03-02 22:12:02,257 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:80]: Looking for .md in /Volumes/LUNII
+2025-03-02 22:12:02,258 [INFO ] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:83]: FS device partition located: /Volumes/LUNII
+2025-03-02 22:12:02,273 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:97]: Device 2.x plugged
+2025-03-02 22:12:02,298 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:12:02,321 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.33% (630.91 MB / 7.39 GB)
+2025-03-02 22:12:02,328 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:12:02,380 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:12:02,384 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:12:02,588 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 22:12:02,600 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:12:02,605 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.33% (630.91 MB / 7.39 GB)
+2025-03-02 22:12:02,605 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:12:02,606 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:12:02,606 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:12:02,616 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:12:02,636 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:12:02,640 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:12:02,641 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:12:02,645 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:12:02,648 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:12:02,734 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:12:02,743 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:02,815 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:12:02,824 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:02,835 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:12:02,847 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:12:02,849 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:12:02,859 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:12:02,864 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:12:02,867 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:02,879 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:12:02,893 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:12:02,906 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:12:02,909 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:12:02,916 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:12:02,917 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:12:02,939 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:12:02,946 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:12:02,976 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:12:02,983 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:02,992 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 393ms
+2025-03-02 22:12:11,876 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:12:11,878 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:12:11,886 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:12:11,888 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.33% (630.91 MB / 7.39 GB)
+2025-03-02 22:12:11,888 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:12:11,889 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:12:11,890 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:12:11,896 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:12:11,897 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:12:11,897 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:12:11,898 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:12:11,903 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:12:11,903 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:12:11,908 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:12:11,909 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:11,915 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:12:11,917 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:11,921 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:12:11,921 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:11,925 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:12:11,925 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:19,406 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:12:19,409 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:12:19,422 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:12:19,425 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.33% (630.91 MB / 7.39 GB)
+2025-03-02 22:12:19,426 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:12:19,426 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:12:19,429 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:12:19,445 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:12:19,446 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:12:19,446 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:12:19,447 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:12:19,478 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:12:19,481 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:12:19,496 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:12:19,498 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:19,513 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:12:19,515 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:19,524 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:12:19,524 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:19,537 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:12:19,538 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:12:56,416 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:65]: Upload 5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip
+2025-03-02 22:12:56,444 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:12:56,448 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:12:56,463 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:12:56,465 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:12:56,467 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:12:56,468 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:12:56,475 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:12:56,483 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:12:56,484 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:12:56,484 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:12:56,485 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:12:56,487 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:12:56,488 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:12:56,501 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:199]: Cache updating of 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:12:56,513 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:213]: Persisting unofficial database to disk
+2025-03-02 22:12:56,604 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 158ms
+2025-03-02 22:13:03,724 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:243]: Pack is in ARCHIVE format. Converting to FS format
+2025-03-02 22:13:03,728 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:247]: Reading ARCHIVE format pack
+2025-03-02 22:13:03,851 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:251]: Converting assets if necessary
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 5/18 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 4/18 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:13:03,870 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 1/18 [pack-converter-0]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 3/18 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:13:03,873 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 9/18 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 8/18 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 7/18 [ForkJoinPool.commonPool-worker-13]
+2025-03-02 22:13:03,873 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 10/18 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 2/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:03,878 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 11/18 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:13:03,869 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 6/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:03,880 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 12/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:03,880 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 13/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:03,881 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 14/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:03,881 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 15/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:03,881 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 16/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:03,882 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 17/18 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:13:03,882 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 18/18 [ForkJoinPool.commonPool-worker-13]
+2025-03-02 22:13:03,884 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 1/18 [pack-converter-0]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 7/18 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 3/18 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 5/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:03,884 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 2/18 [ForkJoinPool.commonPool-worker-13]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 8/18 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 4/18 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:13:03,885 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 6/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:04,059 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 10/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:04,059 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 9/18 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:13:04,111 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 11/18 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:13:04,137 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 12/18 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:13:04,166 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 14/18 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:13:04,156 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 13/18 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:13:04,185 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 15/18 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:13:04,189 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 16/18 [ForkJoinPool.commonPool-worker-13]
+2025-03-02 22:13:04,212 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 17/18 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:13:04,227 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 18/18 [ForkJoinPool.commonPool-worker-13]
+2025-03-02 22:13:04,276 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:255]: Writing FS format pack, using temporary folder: /Users/bookair/.studio/tmp/5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip10126857189362502575
+2025-03-02 22:13:04,978 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:262]: Moving FS format pack into local library: /Users/bookair/.studio/library/4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952
+2025-03-02 22:13:05,012 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:13:05,015 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:13:05,027 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:13:05,029 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:13:05,032 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:13:05,032 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:13:05,035 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:13:05,039 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:13:05,039 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:13:05,040 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:13:05,040 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:13:05,040 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:13:05,041 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:13:05,042 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:13:05,053 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 44ms
+2025-03-02 22:13:09,399 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:09,408 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:13:09,410 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:13:09,413 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:13:09,457 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:13:09,459 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:13:09,477 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:13:09,479 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:09,497 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:13:09,498 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:09,510 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:13:09,513 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:09,526 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:13:09,531 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:09,561 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:413]: Pack folder size: 31.38 MB
+2025-03-02 22:13:09,562 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:418]: SD free space: 6.78 GB
+2025-03-02 22:13:09,562 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:427]: Uploading pack to folder: 80083B89
+2025-03-02 22:13:09,562 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:13:09,564 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.33% (630.91 MB / 7.39 GB)
+2025-03-02 22:13:09,565 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:13:09,566 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:13:09,569 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:13:09,571 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:480]: Pack folder size: 31.38 MB
+2025-03-02 22:13:09,578 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/80083B89
+2025-03-02 22:13:09,581 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file ni (1.27 KB) to /Volumes/LUNII/.content/80083B89/ni
+2025-03-02 22:13:09,586 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 1.27 KB in 16 ms
+2025-03-02 22:13:09,586 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 79.59 KB/sec
+2025-03-02 22:13:09,588 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file ri (120 bytes) to /Volumes/LUNII/.content/80083B89/ri
+2025-03-02 22:13:09,598 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 1.39 KB in 27 ms
+2025-03-02 22:13:09,598 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 51.5 KB/sec
+2025-03-02 22:13:09,598 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/80083B89/rf
+2025-03-02 22:13:09,599 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/80083B89/rf/000
+2025-03-02 22:13:09,599 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000005 (10.11 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000005
+2025-03-02 22:13:09,602 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 11.5 KB in 32 ms
+2025-03-02 22:13:09,603 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 359.38 KB/sec
+2025-03-02 22:13:09,603 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000002 (9.0 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000002
+2025-03-02 22:13:09,608 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 20.5 KB in 38 ms
+2025-03-02 22:13:09,608 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 539.42 KB/sec
+2025-03-02 22:13:09,609 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000003 (8.81 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000003
+2025-03-02 22:13:09,613 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 29.3 KB in 42 ms
+2025-03-02 22:13:09,613 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 697.73 KB/sec
+2025-03-02 22:13:09,613 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000004 (9.74 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000004
+2025-03-02 22:13:09,616 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 39.05 KB in 46 ms
+2025-03-02 22:13:09,616 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 848.84 KB/sec
+2025-03-02 22:13:09,616 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000008 (9.53 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000008
+2025-03-02 22:13:09,620 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 48.57 KB in 50 ms
+2025-03-02 22:13:09,620 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 971.48 KB/sec
+2025-03-02 22:13:09,621 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000001 (2.55 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000001
+2025-03-02 22:13:09,624 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 51.12 KB in 54 ms
+2025-03-02 22:13:09,624 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 946.69 KB/sec
+2025-03-02 22:13:09,625 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000006 (9.94 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000006
+2025-03-02 22:13:09,628 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 61.06 KB in 58 ms
+2025-03-02 22:13:09,628 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.03 MB/sec
+2025-03-02 22:13:09,629 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000007 (9.83 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000007
+2025-03-02 22:13:09,632 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 70.89 KB in 62 ms
+2025-03-02 22:13:09,632 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.12 MB/sec
+2025-03-02 22:13:09,632 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000000 (14.94 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000000
+2025-03-02 22:13:09,638 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 85.83 KB in 67 ms
+2025-03-02 22:13:09,638 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.25 MB/sec
+2025-03-02 22:13:09,638 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000009 (9.31 KB) to /Volumes/LUNII/.content/80083B89/rf/000/00000009
+2025-03-02 22:13:09,644 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 95.14 KB in 74 ms
+2025-03-02 22:13:09,644 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.26 MB/sec
+2025-03-02 22:13:09,644 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/80083B89/sf
+2025-03-02 22:13:09,645 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/80083B89/sf/000
+2025-03-02 22:13:09,646 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000005 (3.98 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000005
+2025-03-02 22:13:10,475 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 4.07 MB in 903 ms
+2025-03-02 22:13:10,475 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.51 MB/sec
+2025-03-02 22:13:10,476 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000002 (49.79 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000002
+2025-03-02 22:13:10,492 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 4.12 MB in 922 ms
+2025-03-02 22:13:10,492 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.47 MB/sec
+2025-03-02 22:13:10,493 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000003 (4.38 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000003
+2025-03-02 22:13:11,395 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 8.5 MB in 1824 ms
+2025-03-02 22:13:11,396 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.66 MB/sec
+2025-03-02 22:13:11,396 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000004 (53.47 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000004
+2025-03-02 22:13:11,412 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 8.55 MB in 1841 ms
+2025-03-02 22:13:11,416 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.64 MB/sec
+2025-03-02 22:13:11,421 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000017 (4.26 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000017
+2025-03-02 22:13:12,328 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 12.81 MB in 2757 ms
+2025-03-02 22:13:12,329 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.65 MB/sec
+2025-03-02 22:13:12,330 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000010 (55.92 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000010
+2025-03-02 22:13:12,344 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 12.86 MB in 2774 ms
+2025-03-02 22:13:12,345 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.64 MB/sec
+2025-03-02 22:13:12,345 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000011 (4.26 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000011
+2025-03-02 22:13:13,217 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.12 MB in 3647 ms
+2025-03-02 22:13:13,218 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.69 MB/sec
+2025-03-02 22:13:13,218 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000016 (52.24 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000016
+2025-03-02 22:13:13,233 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.17 MB in 3663 ms
+2025-03-02 22:13:13,233 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.69 MB/sec
+2025-03-02 22:13:13,234 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000008 (55.92 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000008
+2025-03-02 22:13:13,248 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.23 MB in 3678 ms
+2025-03-02 22:13:13,248 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.68 MB/sec
+2025-03-02 22:13:13,249 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000001 (51.02 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000001
+2025-03-02 22:13:13,263 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.28 MB in 3693 ms
+2025-03-02 22:13:13,263 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.68 MB/sec
+2025-03-02 22:13:13,263 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000006 (54.69 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000006
+2025-03-02 22:13:13,278 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.33 MB in 3708 ms
+2025-03-02 22:13:13,278 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.67 MB/sec
+2025-03-02 22:13:13,278 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000007 (3.92 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000007
+2025-03-02 22:13:14,089 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.25 MB in 4518 ms
+2025-03-02 22:13:14,089 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:13:14,089 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000000 (33.0 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000000
+2025-03-02 22:13:14,102 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.28 MB in 4532 ms
+2025-03-02 22:13:14,103 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:13:14,104 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000009 (3.71 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000009
+2025-03-02 22:13:14,885 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 24.99 MB in 5314 ms
+2025-03-02 22:13:14,886 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:13:14,886 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000013 (3.01 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000013
+2025-03-02 22:13:15,512 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 28.0 MB in 5941 ms
+2025-03-02 22:13:15,512 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.71 MB/sec
+2025-03-02 22:13:15,513 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000014 (51.02 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000014
+2025-03-02 22:13:15,529 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 28.05 MB in 5959 ms
+2025-03-02 22:13:15,529 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.71 MB/sec
+2025-03-02 22:13:15,529 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000015 (3.28 MB) to /Volumes/LUNII/.content/80083B89/sf/000/00000015
+2025-03-02 22:13:16,211 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 31.33 MB in 6640 ms
+2025-03-02 22:13:16,212 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.72 MB/sec
+2025-03-02 22:13:16,215 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000012 (55.92 KB) to /Volumes/LUNII/.content/80083B89/sf/000/00000012
+2025-03-02 22:13:16,238 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 31.38 MB in 6667 ms
+2025-03-02 22:13:16,239 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.71 MB/sec
+2025-03-02 22:13:16,239 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file si (216 bytes) to /Volumes/LUNII/.content/80083B89/si
+2025-03-02 22:13:16,245 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 31.38 MB in 6674 ms
+2025-03-02 22:13:16,246 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:13:16,246 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file li (68 bytes) to /Volumes/LUNII/.content/80083B89/li
+2025-03-02 22:13:16,250 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 31.38 MB in 6680 ms
+2025-03-02 22:13:16,250 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:13:16,251 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:443]: Generating device-specific boot file
+2025-03-02 22:13:16,256 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:456]: Add pack uuid to index
+2025-03-02 22:13:16,256 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:16,258 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:13:30,011 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:13:30,014 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:13:30,016 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:13:30,017 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:13:30,017 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:13:30,035 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:30,038 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:13:30,039 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:13:30,041 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:13:30,046 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:13:30,056 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:13:30,067 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:13:30,068 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:13:30,070 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:13:30,072 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:13:30,074 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:13:30,076 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:13:30,080 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:13:30,081 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:13:30,083 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:30,084 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:13:30,086 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:13:30,088 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:13:30,088 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:13:30,089 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:13:30,095 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:13:30,096 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:13:30,101 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:13:30,103 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:30,104 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 60ms
+2025-03-02 22:13:30,123 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:13:30,123 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 22:13:30,129 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:30,188 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:13:30,203 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:30,228 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:13:30,230 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:34,319 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:34,323 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:13:34,337 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:13:34,341 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:13:34,342 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:13:34,343 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:13:34,348 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:13:34,354 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:34,355 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:13:34,355 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:13:34,355 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:34,361 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:13:34,362 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:13:34,367 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:13:34,367 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:13:34,377 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:13:34,378 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:34,384 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:13:34,384 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:34,390 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:13:34,390 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:34,396 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:13:34,396 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:37,634 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:37,638 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:13:37,649 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:13:37,652 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:13:37,652 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:13:37,652 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:13:37,653 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:13:37,663 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:37,664 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:13:37,665 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:13:37,665 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:13:37,679 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:13:37,682 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:37,691 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:13:37,694 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:13:37,704 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:13:37,708 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:37,716 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:13:37,718 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:37,723 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:13:37,725 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:37,730 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:13:37,731 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:40,449 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:40,453 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:13:40,463 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:13:40,466 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:13:40,466 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:13:40,467 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:13:40,469 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:13:40,473 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:13:40,474 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:13:40,474 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:13:40,475 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:13:40,504 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:13:40,504 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:13:40,514 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:13:40,515 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:40,524 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:13:40,526 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:40,537 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:13:40,537 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:40,545 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:13:40,545 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:13:40,554 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:13:40,554 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:23,511 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:14:23,514 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:14:23,516 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:14:23,516 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:14:23,516 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:14:23,523 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:14:23,539 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:14:23,548 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:14:23,552 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:14:23,553 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:14:23,554 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:14:23,555 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:14:23,558 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:14:23,561 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:14:23,562 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:14:23,564 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:14:23,567 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:14:23,568 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:14:23,568 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:14:23,568 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:14:23,568 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:14:23,570 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:14:23,571 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:14:23,578 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 58ms
+2025-03-02 22:14:23,579 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:14:23,580 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:14:23,590 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 22:14:23,591 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:14:23,594 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:23,605 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:14:23,606 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:23,617 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:14:23,618 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:23,629 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:14:23,631 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:23,640 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:14:23,641 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:30,449 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:14:30,452 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:14:30,471 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:14:30,474 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.76% (663.09 MB / 7.39 GB)
+2025-03-02 22:14:30,475 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:14:30,475 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:14:30,476 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:14:30,494 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:14:30,495 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:14:30,496 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:14:30,496 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:14:30,504 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:14:30,504 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:14:30,511 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:14:30,511 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:30,517 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:14:30,518 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:30,524 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:14:30,525 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:30,529 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:14:30,530 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:30,537 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:14:30,537 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:34,198 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:14:34,203 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:310]: Found pack with uuid: b2f92faf-a3e5-4681-a860-ccad5730ca13
+2025-03-02 22:14:34,203 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:14:34,210 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:319]: Removing pack folder: /Volumes/LUNII/.content/5730CA13
+2025-03-02 22:14:34,288 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:14:34,292 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.43% (638.56 MB / 7.39 GB)
+2025-03-02 22:14:34,293 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:14:34,294 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:14:34,294 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:14:34,301 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:14:34,301 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:14:34,301 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:14:34,303 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:14:34,320 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:14:34,320 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:14:34,326 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:14:34,326 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:34,332 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:14:34,332 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:34,338 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:14:34,338 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:14:34,348 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:14:34,348 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:16:27,752 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:16:27,764 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:16:27,783 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:16:27,787 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.43% (638.56 MB / 7.39 GB)
+2025-03-02 22:16:27,788 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:16:27,790 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:16:27,792 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:16:27,798 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:16:27,799 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:16:27,799 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:16:27,800 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:16:27,835 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:16:27,836 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:16:27,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:16:27,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:16:27,853 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:16:27,856 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:16:27,876 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:16:27,878 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:16:27,885 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:16:27,885 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:12,195 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:65]: Upload 5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip
+2025-03-02 22:18:12,205 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:18:12,209 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:18:12,215 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:18:12,216 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:18:12,217 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:18:12,217 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip`
+2025-03-02 22:18:12,220 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:18:12,221 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:18:12,223 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:18:12,224 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:18:12,224 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:18:12,224 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:18:12,224 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:18:12,225 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:18:12,225 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:18:12,228 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:199]: Cache updating of 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:12,232 [INFO ] [studio.metadata.DatabaseMetadataService] [DatabaseMetadataService.java:213]: Persisting unofficial database to disk
+2025-03-02 22:18:12,252 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 48ms
+2025-03-02 22:18:16,595 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:243]: Pack is in ARCHIVE format. Converting to FS format
+2025-03-02 22:18:16,604 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:247]: Reading ARCHIVE format pack
+2025-03-02 22:18:16,760 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:251]: Converting assets if necessary
+2025-03-02 22:18:16,780 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 2/12 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:18:16,780 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 4/12 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:18:16,781 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 1/12 [pack-converter-0]
+2025-03-02 22:18:16,781 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 3/12 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:18:16,783 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 5/12 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:18:16,784 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 6/12 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:18:16,785 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 8/12 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:18:16,785 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 9/12 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:18:16,786 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 12/12 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:18:16,786 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 10/12 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:18:16,788 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 11/12 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:18:16,787 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:149]: Image from node 7/12 [ForkJoinPool.commonPool-worker-1]
+2025-03-02 22:18:16,789 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 1/12 [pack-converter-0]
+2025-03-02 22:18:16,789 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 2/12 [ForkJoinPool.commonPool-worker-1]
+2025-03-02 22:18:16,789 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 4/12 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:18:16,790 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 3/12 [ForkJoinPool.commonPool-worker-5]
+2025-03-02 22:18:16,790 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 8/12 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:18:16,790 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 6/12 [ForkJoinPool.commonPool-worker-7]
+2025-03-02 22:18:16,791 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 5/12 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:18:16,791 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 7/12 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:18:16,820 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 9/12 [ForkJoinPool.commonPool-worker-9]
+2025-03-02 22:18:16,825 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 10/12 [ForkJoinPool.commonPool-worker-3]
+2025-03-02 22:18:16,850 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 11/12 [ForkJoinPool.commonPool-worker-11]
+2025-03-02 22:18:16,870 [DEBUG] [studio.core.v1.utils.PackAssetsCompression] [PackAssetsCompression.java:180]: Audio from node 12/12 [ForkJoinPool.commonPool-worker-15]
+2025-03-02 22:18:16,915 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:255]: Writing FS format pack, using temporary folder: /Users/bookair/.studio/tmp/5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip9376815003598906347
+2025-03-02 22:18:17,409 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:262]: Moving FS format pack into local library: /Users/bookair/.studio/library/1bd09582-abb8-4773-bacc-f9ab73f4558e.converted_1740950297405
+2025-03-02 22:18:17,439 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:18:17,443 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:18:17,451 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:18:17,453 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:18:17,455 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `1bd09582-abb8-4773-bacc-f9ab73f4558e.converted_1740950297405`
+2025-03-02 22:18:17,455 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:18:17,455 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip`
+2025-03-02 22:18:17,457 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:18:17,459 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:18:17,461 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:18:17,461 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:18:17,461 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:18:17,461 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:18:17,462 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:18:17,463 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:18:17,463 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:18:17,475 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 39ms
+2025-03-02 22:18:20,835 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:20,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 6
+2025-03-02 22:18:20,846 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:20,847 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:20,886 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:20,886 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:20,894 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:20,894 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:20,899 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:20,899 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:20,908 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:20,908 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:20,916 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:20,916 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:20,921 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:413]: Pack folder size: 21.28 MB
+2025-03-02 22:18:20,922 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:418]: SD free space: 6.77 GB
+2025-03-02 22:18:20,922 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:427]: Uploading pack to folder: 73F4558E
+2025-03-02 22:18:20,922 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:20,923 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.43% (638.56 MB / 7.39 GB)
+2025-03-02 22:18:20,923 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:20,924 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:20,925 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:20,927 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:480]: Pack folder size: 21.28 MB
+2025-03-02 22:18:20,929 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/73F4558E
+2025-03-02 22:18:20,931 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file ni (1.02 KB) to /Volumes/LUNII/.content/73F4558E/ni
+2025-03-02 22:18:20,938 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 1.02 KB in 12 ms
+2025-03-02 22:18:20,938 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 84.63 KB/sec
+2025-03-02 22:18:20,938 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file ri (84 bytes) to /Volumes/LUNII/.content/73F4558E/ri
+2025-03-02 22:18:20,946 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 1.1 KB in 19 ms
+2025-03-02 22:18:20,946 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 57.77 KB/sec
+2025-03-02 22:18:20,946 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/73F4558E/rf
+2025-03-02 22:18:20,947 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/73F4558E/rf/000
+2025-03-02 22:18:20,948 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000005 (20.15 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000005
+2025-03-02 22:18:20,955 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.24 KB in 29 ms
+2025-03-02 22:18:20,955 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 732.56 KB/sec
+2025-03-02 22:18:20,955 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000002 (20.16 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000002
+2025-03-02 22:18:20,964 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 41.4 KB in 37 ms
+2025-03-02 22:18:20,964 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.09 MB/sec
+2025-03-02 22:18:20,964 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000003 (20.17 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000003
+2025-03-02 22:18:20,972 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 61.57 KB in 46 ms
+2025-03-02 22:18:20,972 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.31 MB/sec
+2025-03-02 22:18:20,973 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000004 (20.17 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000004
+2025-03-02 22:18:20,979 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 81.74 KB in 53 ms
+2025-03-02 22:18:20,979 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.51 MB/sec
+2025-03-02 22:18:20,980 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000001 (4.55 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000001
+2025-03-02 22:18:20,984 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 86.29 KB in 57 ms
+2025-03-02 22:18:20,984 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.48 MB/sec
+2025-03-02 22:18:20,984 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000006 (20.12 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000006
+2025-03-02 22:18:20,990 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 106.41 KB in 64 ms
+2025-03-02 22:18:20,990 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.62 MB/sec
+2025-03-02 22:18:20,991 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000000 (22.85 KB) to /Volumes/LUNII/.content/73F4558E/rf/000/00000000
+2025-03-02 22:18:20,999 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 129.26 KB in 73 ms
+2025-03-02 22:18:20,999 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 1.73 MB/sec
+2025-03-02 22:18:21,000 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/73F4558E/sf
+2025-03-02 22:18:21,002 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:490]: Creating directory /Volumes/LUNII/.content/73F4558E/sf/000
+2025-03-02 22:18:21,003 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000005 (3.92 MB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000005
+2025-03-02 22:18:21,813 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 4.05 MB in 886 ms
+2025-03-02 22:18:21,813 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.57 MB/sec
+2025-03-02 22:18:21,814 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000002 (17.32 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000002
+2025-03-02 22:18:21,822 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 4.06 MB in 896 ms
+2025-03-02 22:18:21,823 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.54 MB/sec
+2025-03-02 22:18:21,823 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000003 (6.14 MB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000003
+2025-03-02 22:18:23,094 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 10.21 MB in 2168 ms
+2025-03-02 22:18:23,094 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.71 MB/sec
+2025-03-02 22:18:23,095 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000004 (16.5 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000004
+2025-03-02 22:18:23,102 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 10.22 MB in 2176 ms
+2025-03-02 22:18:23,102 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.7 MB/sec
+2025-03-02 22:18:23,103 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000010 (14.67 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000010
+2025-03-02 22:18:23,108 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 10.24 MB in 2182 ms
+2025-03-02 22:18:23,108 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.69 MB/sec
+2025-03-02 22:18:23,109 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000011 (3.05 MB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000011
+2025-03-02 22:18:23,738 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 13.29 MB in 2812 ms
+2025-03-02 22:18:23,738 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.73 MB/sec
+2025-03-02 22:18:23,739 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000008 (15.48 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000008
+2025-03-02 22:18:23,744 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 13.31 MB in 2818 ms
+2025-03-02 22:18:23,745 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.72 MB/sec
+2025-03-02 22:18:23,745 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000001 (18.54 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000001
+2025-03-02 22:18:23,753 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 13.32 MB in 2826 ms
+2025-03-02 22:18:23,753 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.72 MB/sec
+2025-03-02 22:18:23,753 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000006 (15.69 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000006
+2025-03-02 22:18:23,758 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 13.34 MB in 2832 ms
+2025-03-02 22:18:23,758 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.71 MB/sec
+2025-03-02 22:18:23,758 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000007 (4.14 MB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000007
+2025-03-02 22:18:24,627 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.48 MB in 3701 ms
+2025-03-02 22:18:24,628 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.72 MB/sec
+2025-03-02 22:18:24,628 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000000 (23.44 KB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000000
+2025-03-02 22:18:24,637 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 17.5 MB in 3711 ms
+2025-03-02 22:18:24,637 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.72 MB/sec
+2025-03-02 22:18:24,637 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file 00000009 (3.78 MB) to /Volumes/LUNII/.content/73F4558E/sf/000/00000009
+2025-03-02 22:18:25,413 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.28 MB in 4487 ms
+2025-03-02 22:18:25,413 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.74 MB/sec
+2025-03-02 22:18:25,414 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file si (144 bytes) to /Volumes/LUNII/.content/73F4558E/si
+2025-03-02 22:18:25,418 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.28 MB in 4492 ms
+2025-03-02 22:18:25,418 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.74 MB/sec
+2025-03-02 22:18:25,418 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file nm (0 bytes) to /Volumes/LUNII/.content/73F4558E/nm
+2025-03-02 22:18:25,419 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.28 MB in 4493 ms
+2025-03-02 22:18:25,419 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.74 MB/sec
+2025-03-02 22:18:25,419 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:496]: Copying file li (44 bytes) to /Volumes/LUNII/.content/73F4558E/li
+2025-03-02 22:18:25,422 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:530]: Transferred 21.28 MB in 4496 ms
+2025-03-02 22:18:25,422 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:531]: Average speed = 4.73 MB/sec
+2025-03-02 22:18:25,422 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:443]: Generating device-specific boot file
+2025-03-02 22:18:25,426 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:456]: Add pack uuid to index
+2025-03-02 22:18:25,426 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:25,426 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:18:29,244 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:29,250 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:29,251 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:29,251 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:29,251 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:29,253 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 22:18:29,268 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:29,268 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:18:29,272 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:18:29,273 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:29,274 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:29,274 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:29,279 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:29,280 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:29,286 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:29,287 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:29,288 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:18:29,290 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:18:29,291 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:29,292 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:29,292 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `1bd09582-abb8-4773-bacc-f9ab73f4558e.converted_1740950297405`
+2025-03-02 22:18:29,293 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:18:29,293 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip`
+2025-03-02 22:18:29,297 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:29,298 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:29,299 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:18:29,304 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:18:29,305 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:29,305 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:29,307 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:18:29,307 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:18:29,307 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:18:29,307 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:18:29,307 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:18:29,308 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:18:29,308 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:18:29,308 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:29,308 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:29,317 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 58ms
+2025-03-02 22:18:37,611 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:37,623 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:18:37,632 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:37,639 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:37,640 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:37,640 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:37,644 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:37,651 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:37,652 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:37,652 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:37,652 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:37,686 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:37,687 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:37,693 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:37,694 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:37,700 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:37,701 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:37,706 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:37,706 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:37,717 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:37,718 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:37,724 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:37,724 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:39,249 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:39,261 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:18:39,277 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:39,281 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:39,281 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:39,281 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:39,283 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:39,287 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:39,287 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:39,287 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:39,288 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:39,297 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:39,297 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:39,301 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:39,301 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:39,306 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:39,307 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:39,310 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:39,310 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:39,314 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:39,314 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:39,317 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:39,317 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:41,563 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:41,564 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:18:41,574 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:41,576 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:41,577 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:41,577 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:41,577 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:41,582 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:41,583 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:41,583 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:41,583 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:41,596 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:41,597 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:41,607 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:41,608 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:41,616 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:41,616 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:41,621 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:41,622 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:41,628 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:41,628 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:41,633 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:41,633 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:43,679 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:43,685 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:340]: Replacing pack index file: /Volumes/LUNII/.pi
+2025-03-02 22:18:43,701 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:43,704 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:43,704 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:43,704 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:43,705 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:43,715 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:43,715 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:43,716 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:43,718 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:43,731 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:43,731 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:43,737 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:43,737 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:43,744 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:43,745 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:43,752 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:43,752 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:43,759 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:43,760 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:43,765 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:43,765 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:54,838 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:122]: Reading device infos from file: /Volumes/LUNII/.md
+2025-03-02 22:18:54,847 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:134]: SD card used : 8.72% (660.41 MB / 7.39 GB)
+2025-03-02 22:18:54,847 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:139]: Device metadata format version: 6
+2025-03-02 22:18:54,847 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:190]: Firmware version: 3.1
+2025-03-02 22:18:54,849 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:196]: Serial Number: 23424020019933
+2025-03-02 22:18:54,857 [TRACE] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:259]: Reading packs index from file: /Volumes/LUNII/.pi
+2025-03-02 22:18:54,857 [INFO ] [studio.webui.api.EvergreenController] [EvergreenController.java:30]: Current version infos: {"version":"0.5.2","timestamp":"2024-01-06T08:49:25Z"}
+2025-03-02 22:18:54,858 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:221]: Number of packs in index: 7
+2025-03-02 22:18:54,858 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 8126c612-f668-4d89-bf46-7c888171a964
+2025-03-02 22:18:54,860 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 1
+2025-03-02 22:18:54,864 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `274c26c0-da31-490b-8253-00590e179f43.converted_1740949731480`
+2025-03-02 22:18:54,868 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_1_(8_Histoires)[by_Gayel+psyckoyic+tonyhuguenotte-v2.zip`
+2025-03-02 22:18:54,885 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]petitefabriquedemots_-_Les_aventures_de_Princesse_Plouplou_(10_histoires)[by_Gayel&emilium-v2.zip`
+2025-03-02 22:18:54,887 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]StudioFantask_Les_aventures_de_Rodolphe_et_Gala_saison_2_(8_Histoires)[by_Gayel+psyckoyic+pascal_974-v2.zip`
+2025-03-02 22:18:54,887 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `1bd09582-abb8-4773-bacc-f9ab73f4558e.converted_1740950297405`
+2025-03-02 22:18:54,888 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `226f0298-f184-4a70-b6dd-cdfb5c4d2806.converted_1740949086988`
+2025-03-02 22:18:54,888 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Encore_une_histoire_-_Les_primaires_(5_chapitres)[by_G.-V2.zip`
+2025-03-02 22:18:54,889 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]France Inter_-_Une_histoire_et_OLI_Pack_4_(17_Histoires)[by_bagnico+Lesebio-v1.zip`
+2025-03-02 22:18:54,891 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `3+]FLEURUS_PRESSE_-_La_bande_à_Blou_(30 épisodes)[by_TheMadLewis-V2.zip`
+2025-03-02 22:18:54,892 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 0c3676e9-1a35-426c-9c7f-74cd98b0d3f1
+2025-03-02 22:18:54,892 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:54,893 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `b2f92faf-a3e5-4681-a860-ccad5730ca13.converted_1740949078113`
+2025-03-02 22:18:54,893 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `231896af-2007-4aa8-a436-61016a3b498d.converted_1740947939214`
+2025-03-02 22:18:54,894 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `4957984c-3fd1-452e-afc2-7dc180083b89.converted_1740949984952`
+2025-03-02 22:18:54,894 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `c80974f1-4097-4dc2-a580-f9fc290f76ca.converted_1740949037296`
+2025-03-02 22:18:54,894 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]FranceCulture_-_Les_Aventures_du_Petit_Nicolas_(Saison_1)[by_Thomas.Droge-v1.zip`
+2025-03-02 22:18:54,896 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `0c3676e9-1a35-426c-9c7f-74cd98b0d3f1.converted_1740949082036`
+2025-03-02 22:18:54,896 [INFO ] [studio.webui.service.LibraryService] [LibraryService.java:89]: Read metadata from `5+]Ipalo_-_Le_facteur_de_l'espace[by_Gayel-v1.zip.zip`
+2025-03-02 22:18:54,902 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 4957984c-3fd1-452e-afc2-7dc180083b89
+2025-03-02 22:18:54,902 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:54,902 [INFO ] [studio.webui.api.LibraryController] [LibraryController.java:47]: Library packs scanned in 45ms
+2025-03-02 22:18:54,916 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 274c26c0-da31-490b-8253-00590e179f43
+2025-03-02 22:18:54,918 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:54,964 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 1bd09582-abb8-4773-bacc-f9ab73f4558e
+2025-03-02 22:18:54,971 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 3
+2025-03-02 22:18:54,982 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: 231896af-2007-4aa8-a436-61016a3b498d
+2025-03-02 22:18:54,982 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:18:54,997 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:226]: Pack UUID: c80974f1-4097-4dc2-a580-f9fc290f76ca
+2025-03-02 22:18:54,997 [DEBUG] [studio.driver.fs.FsStoryTellerAsyncDriver] [FsStoryTellerAsyncDriver.java:239]: Pack version: 2
+2025-03-02 22:19:04,238 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:131]: Hotplug event callback (0483:a341): 2
+2025-03-02 22:19:04,259 [INFO ] [studio.webui.service.StoryTellerService] [StoryTellerService.java:113]: Device 2.x unplugged
+2025-03-03 22:34:58,977 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread
+2025-03-03 22:34:58,977 [INFO ] [studio.driver.LibUsbDetectionHelper] [LibUsbDetectionHelper.java:110]: Stopping async event handling worker thread
