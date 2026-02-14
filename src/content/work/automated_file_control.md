@@ -1,6 +1,6 @@
 ---
 title: Automated File Control, Integrated into Google Sheets
-publishDate: 2028-10-02 00:00:00
+publishDate: 2025-01-02 00:00:00
 img: /assets/stock-4.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |

@@ -1,6 +1,6 @@
 ---
 title: Salesforce Data Integration to Google Cloud Platform
-publishDate: 2025-03-02 00:00:00
+publishDate: 2026-01-01 00:00:00
 img: /assets/stock-1.png
 img_alt: Salesforce Data Integration to Google Cloud Platform
 description: |

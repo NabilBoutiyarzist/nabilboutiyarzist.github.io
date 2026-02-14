@@ -1,6 +1,6 @@
 ---
 title: Computer vision project
-publishDate: 2024-03-04 00:00:00
+publishDate: 2024-12-04 00:00:00
 img: /assets/computer_vision.svg
 img_alt: Title of the project with a motherboard background
 description: |
