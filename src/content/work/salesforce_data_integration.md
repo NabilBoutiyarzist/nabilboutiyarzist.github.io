@@ -52,7 +52,7 @@ Additionally, **Datadog** was implemented to monitor both API calls and GCP reso
 
 ### Dashboard  
 A **Power BI dashboard** was developed to provide visibility into key performance indicators, enabling better monitoring and decision-making.  
-Using of **DAX, Power Query**  
+Using **DAX and Power Query**  
 
 ### Architecture  
 <img src="/assets/archi.png" alt="Architecture">

@@ -13,6 +13,8 @@ tags:
   - Data Engineering
 ---
 
+🚀 **Live Dashboard:** [https://nabilboutiyarzist-end-to-end-project.streamlit.app/](https://nabilboutiyarzist-end-to-end-project.streamlit.app/)
+
 ### Project Overview & Objectives
 
 The goal of this project was to build a robust **End-to-End Data Pipeline** for a retail business. Starting from raw, disjointed datasets (orders, products, stores), the objective was to provide a clear view of business performance through a **dynamic dashboard**.

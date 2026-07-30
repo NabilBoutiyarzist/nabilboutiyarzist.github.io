@@ -15,18 +15,18 @@ tags:
 
 We had a dataset of 42,000 images of handwritten digits, ranging from 0 to 9, our database consisted of 42,000 rows and 785 columns, with each row representing an image and the columns representing the pixels linked to the image, ranging from 0 to 255 (white and black images) and one column determining the number.
 
-The idea will be to design the best possible handwritten digit recognition model, in order to determine with the greatest precision the digit to be expressed. 
+The idea was to design the best possible handwritten digit recognition model, in order to determine with the greatest precision the digit to be expressed. 
 
 To provide the best possible answer to this problem, we will proceed as follows: 
 - Carry out a statistical analysis of the data at our disposal
 - Design a clustering analysis to check whether our data can be broken down into 10 segments (digits 0 to 9).
-- Designing a recognition model
+- Design a recognition model
 - Design an interactive application where it will be possible to write a number and then make the prediction.   
 
 ---
 
 ### Technologies Used  
-- **Python** (Pandas for data processing, ) 
+- **Python** (Pandas for data processing)
 - **Excel** (For the statistical analysis)
 - **R** (For the clustering)
 
@@ -39,9 +39,9 @@ First we measured the distribution of digit occurrences :
 
 <img src="/assets/distribution_digits.png" alt="distribution_digits">
 
-We saw that the distribution of figures were relatively uniform, with each figure appearing with a frequency of between approximately 7.5% and 11%. No figure significantly dominates the others, which could indicate the absence of bias in the generation or selection of figures in the data source.
+We saw that the distribution of figures was relatively uniform, with each figure appearing with a frequency of between approximately 7.5% and 11%. No figure significantly dominates the others, which could indicate the absence of bias in the generation or selection of figures in the data source.
 
-Next, we wanted to know if each digit was written in different ways, so as to detect as far as possible any digit with an “weird” representation (for the clever who want to fail our model with intentional unintelligible handwriting ^^)
+Next, we wanted to know if each digit was written in different ways, so as to detect as far as possible any digit with a “weird” representation (for those clever enough to try to fail our model with intentional unintelligible handwriting ^^)
 
 Here's an example of different writing styles from number 2: 
 
@@ -61,7 +61,7 @@ Here are some key observations:
 
 The aim of setting up a cluster is to ensure that the data can be broken down into 10 categories (0 to 9) **without the data labeling that we have.** We therefore need to use an unsupervised clustering algorithm. 
 
-The clustering was build with R and we used the Kmeans algorithm.
+The clustering was built with R and we used the Kmeans algorithm.
 The k-means method is an unsupervised clustering algorithm that aims to partition a data set into K distinct clusters. Each observation is assigned to the nearest cluster, based on the Euclidean distance between the observation and the cluster center, or centroid. These centroids are initially chosen at random, and the algorithm then iterates to optimize their position in order to minimize intra-cluster variance. The process continues until the centroids stabilize and the assignment of observations to clusters no longer changes significantly.
 
 <img src="/assets/clustering.png" alt="number2" >
@@ -78,7 +78,7 @@ Principal component analysis (PCA) combined with the k-means algorithm provides 
 We won't explain how it works here, but we can simply say that it's a similar methodology to traditional supervised learning methods: they receive input images, detect features in each of them, then train a classifier on these images.
 
 #### Results: 
-We trained the model with a precision score of 99,4 % on the training data, and a score of 98,3 % on the test data. Classification performance was excellent, with precision, recall and F1 score all rated at 0.983. 
+We trained the model with a precision score of 99.4% on the training data, and a score of 98.3% on the test data. Classification performance was excellent, with precision, recall and F1 score all rated at 0.983. 
 
 ### Interactive application
 
@@ -89,6 +89,6 @@ To do that, we have exported the model with JobLib (python library), in this cas
 In order to build our application, we used the Gradio library, which enables us to 
 create user-friendly interfaces for machine learning models. 
 
-Here an example of the app : 
+Here's an example of the app: 
 
 <img src="/assets/app_cnn.gif" alt="number2" >
