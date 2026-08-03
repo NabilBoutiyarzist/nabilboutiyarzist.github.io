@@ -4,47 +4,34 @@ publishDate: 2025-01-02 00:00:00
 img: /assets/stock-4.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
-  I developed an automated file control, directly integrated into Google Sheets, to facilitate the integration into Salesforce.
+  An integration partner spent hours fixing Excel files by hand before every Salesforce import. I built an automated control tool, directly inside Google Sheets, to catch formatting errors in seconds.
 tags:
   - Python
   - Pandas
   - Data 
 ---
 
-### Project Overview & Objectives 
+### The Problem
+Before every Salesforce import, someone had to manually check each `.xlsx` file line by line. Missing fields, wrong formats, broken references: the integration partner spent **around five hours per file** fixing errors by hand, across hundreds of files. That doesn't scale.
 
-The goal of this project was to facilitate the integration of Google Sheets files into Salesforce. To import an `.xlsx` file into Salesforce, it must comply with the format specified by Salesforce objects. However, the files we needed to integrate contained many formatting errors, and we had hundreds of files to process.
+Here's the solution in action, a button inside Google Sheets that triggers the check and returns a report in seconds:
 
-The integration partner responsible for Salesforce configuration spent approximately **five hours per file** correcting errors before importing them.
+<img src="/assets/controlling_file.gif" alt="Automated control in action: button in Google Sheets triggers validation and returns a report">
 
-The objective was to identify **errors in each file** to help users correct them more easily. **Automatic correction was not possible**, as some values were missing and could not be guessed. To address this issue, I developed a script that generates a **report listing all detected errors**. These reports were **directly integrated into Google Sheets**. 
+### The Data
+Each file is a Google Sheet exported to `.xlsx`, expected to match a specific Salesforce object schema. Volume: hundreds of files, filled in manually by different people, so formatting drifted (missing values, wrong types, inconsistent columns). Automatic correction wasn't an option here: some missing values simply can't be guessed. So the focus shifted to **detection, not guessing**: surface every error clearly and let the person filling the sheet fix it themselves.
 
----
+### Why This Stack
+- **Python + Pandas** for the validation logic: the ruleset (required fields, formats, cross-references) maps naturally to DataFrame operations.
+- **FPDF** to turn validation results into a readable PDF report instead of raw logs. End users aren't developers, so the output had to be self-explanatory.
+- **Object-Oriented Programming** to keep the rule engine maintainable: adding a new check should be an isolated change, not a rewrite.
+- **Docker + Cloud Run**: the validation logic runs as a stateless service, no server to maintain, scales to zero between usage spikes. A good match for a "one file, one request" usage pattern.
+- **Google Apps Script** as the front door: instead of asking non-technical users to leave Google Sheets, I added a button directly inside the sheet they already use. Export `.xlsx`, send it to the Cloud Run endpoint, get a report link back in a popup.
 
-### Technologies Used  
-- **Python** (Pandas for data processing, FPDF for PDF generation)  
-- **Google Cloud Platform (GCP)** (Cloud Run for deployment)  
-- **Docker** (Containerization of the application)  
-- **Flask API** (To handle file processing)  
-- **Google Apps Script** (To integrate the solution into Google Sheets)  
+### The Real Challenge
+The hard part wasn't the validation logic. It was designing a workflow non-technical users would actually adopt. Forcing people to leave Google Sheets to check a file elsewhere would have killed adoption. Keeping everything to one click, inside the tool they already use, was the real product decision here.
 
----
-
-### How It Works  
-
-The **control script** was built in Python using **Pandas** for data validation and **FPDF** to generate reports in PDF format. To ensure **scalability and maintainability**, the script was developed using **Object-Oriented Programming** principles.  
-
-The application was then **containerized with Docker** and deployed on **Google Cloud Platform using Cloud Run**.  
-
-Additionally, I integrated **Google Apps Script** into each Google Sheets file to:  
-1. **Create a button** that allows users to launch the file validation process.  
-2. **Export the Google Sheet as an `.xlsx` file**.  
-3. **Send the exported file to the endpoint created on Cloud Run**.  
-4. **Receive the generated report** and display a **popup** with a link to the report (which is stored in the user’s Google Drive root folder).  
-
----
-
-### Example of Results  
-<img src="/assets/controlling_file.gif" alt="Architecture">
+### Result
+The tool is in production use to check files before every Salesforce import, replacing manual line-by-line review. It has corrected hundreds of files, saving around **5 hours per file** and several thousand euros in integration-partner costs.
 
 

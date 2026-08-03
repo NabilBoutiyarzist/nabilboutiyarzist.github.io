@@ -4,7 +4,7 @@ publishDate: 2025-12-01 00:00:00
 img: /assets/dbt_streamlit.png
 img_alt: From DBT Transformation to Streamlit Visualization
 description: |
-  I built an end-to-end ELT pipeline using DBT and DuckDB to transform raw retail data into a Star Schema, visualized via an interactive Streamlit dashboard.
+  Raw retail exports, no shared keys, no reliable KPIs. I built an end-to-end ELT pipeline with DBT and DuckDB into a Star Schema, visualized through an interactive Streamlit dashboard.
 tags:
   - DBT
   - DuckDB
@@ -15,47 +15,32 @@ tags:
 
 🚀 **Live Dashboard:** [https://nabilboutiyarzist-end-to-end-project.streamlit.app/](https://nabilboutiyarzist-end-to-end-project.streamlit.app/)
 
-### Project Overview & Objectives
+### The Problem
+Raw retail data rarely comes ready to analyze. Orders, products and stores lived in separate exports, didn't share consistent keys (e.g. `ARTEAN` vs `product_code`), and used inconsistent types. Before any KPI can be trusted, that mess has to be modeled properly. I built a complete ELT pipeline to turn disconnected retail exports into a single, reliable source for business KPIs.
 
-The goal of this project was to build a robust **End-to-End Data Pipeline** for a retail business. Starting from raw, disjointed datasets (orders, products, stores), the objective was to provide a clear view of business performance through a **dynamic dashboard**.
+<img src="/assets/dashboard.png" alt="Streamlit Dashboard">
 
-The main challenge lay in the **data quality and modeling**: unclear relationships between files (e.g., inconsistent naming conventions like `ARTEAN` vs `product_code`) and raw data requiring type harmonization.
+### The Data
+Tens of thousands of rows of structured, tabular retail data (order headers, order lines, products, stores), ingested and modeled entirely with SQL inside DuckDB.
 
-To solve this, I designed a complete **ELT (Extract, Load, Transform)** process. I structured the data modeling to ensure reliability and scalability, resulting in a **Star Schema** optimized for analytics. The final output is an interactive application allowing stakeholders to monitor KPIs such as Gross Revenue, VAT, and Top Products in real-time.
+### Why This Stack
+- **DuckDB** instead of a full data warehouse: an in-process OLAP engine, zero infrastructure to manage, fast enough for this data volume. The right tool when you don't need a cluster.
+- **DBT** to make the transformation logic testable, versioned and readable as SQL, instead of scattered ad-hoc scripts. Important once staging, intermediate and marts layers start depending on each other.
+- **Streamlit** for the visualization layer: the fastest way to turn a Python/SQL backend into a shareable, interactive dashboard without building a separate frontend.
 
----
+### How It's Built
+Three DBT layers:
+1. **Staging (Bronze):** raw ingestion, `TRY_CAST` type harmonization, column standardization.
+2. **Intermediate (Silver):** join order headers with order lines to rebuild the full sales context, compute enriched metrics (gross revenue incl. VAT, tax amounts, order status).
+3. **Marts (Gold):** Star Schema, a central `fact_sales` table surrounded by `dim_product`, `dim_store`, `dim_date`, built for fast analytical queries.
 
-### Technologies Used
-- **DBT (Data Build Tool)** (For data transformation and testing)
-- **DuckDB** (High-performance in-process SQL OLAP database)
-- **Streamlit** (Python framework for data visualization)
-- **SQL** (Core logic for data modeling)
-- **Python** (Environment management and application deployment)
-
----
-
-### How It Works
-
-The pipeline follows modern Data Engineering best practices, structured in three key layers using **DBT**:
-
-1.  **Staging Layer (Bronze):** Raw data ingestion with type harmonization (using `TRY_CAST` for robustness), cleaning, and column standardization.
-2.  **Intermediate Layer (Silver):** Complex logic implementation. I joined Order Headers with Order Lines to reconstruct the full sales context and calculated enriched metrics (Gross Revenue incl. VAT, tax amounts, and order statuses).
-3.  **Marts Layer (Gold):** Final modeling into a **Star Schema**. This includes a central `fact_sales` table surrounded by dimensional tables (`dim_product`, `dim_store`, `dim_date`), optimized for analytical queries.
-
-**Methodology:**
-Before coding, I established a **Logical Data Model (LDM)** to map out relationships and resolve schema ambiguities. The visualization layer, built with **Streamlit**, connects directly to the processed DuckDB files to render KPIs and charts without latency.
-
----
-
-### Example of Results
-
-🚀 **Live Dashboard:** [https://nabilboutiyarzist-end-to-end-project.streamlit.app/](https://nabilboutiyarzist-end-to-end-project.streamlit.app/)
-
-**Logical Data Model**
-<img src="/assets/MLD.drawio.png" alt="Logical Data Model"> 
-
-**Logical Data Lineage:**
+<img src="/assets/MLD.drawio.png" alt="Logical Data Model">
 <img src="/assets/lineage_graph.png" alt="DBT Lineage">
 
-**Final Dashboard Interface:**
-<img src="/assets/dashboard.png" alt="Streamlit Dashboard">
+### The Real Challenge
+Inconsistent keys and naming across source files (`ARTEAN` vs `product_code`) meant the join logic couldn't be assumed. It had to be reverse-engineered from the data itself. I mapped the relationships in a Logical Data Model *before* writing a single DBT model, to avoid discovering schema conflicts halfway through the transformation layer.
+
+### Result
+A live Streamlit dashboard reading directly from the modeled DuckDB tables, no manual refresh, no spreadsheet juggling. Stakeholders can track Gross Revenue, VAT and Top Products in real time.
+
+🚀 **Try it live:** [https://nabilboutiyarzist-end-to-end-project.streamlit.app/](https://nabilboutiyarzist-end-to-end-project.streamlit.app/)

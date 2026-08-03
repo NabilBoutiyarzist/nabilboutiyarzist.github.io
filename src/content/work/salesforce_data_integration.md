@@ -4,57 +4,34 @@ publishDate: 2026-01-01 00:00:00
 img: /assets/stock-1.png
 img_alt: Salesforce Data Integration to Google Cloud Platform
 description: |
-  I integrated the Salesforce Data into the cloud, in order to build a visualization tool
+  Managers needed real-time KPIs, but Salesforce data required manual exports to reach BI tools. I built an automated pipeline into Google Cloud Platform to feed a live Power BI dashboard.
 tags:
   - Data Engineering 
   - Data Analysis
 ---
 
-### Project Objective 
+### The Problem
+Managers needed real-time visibility on their team's KPIs, but the source of truth (Salesforce) wasn't accessible for BI without manual exports. I built a pipeline to sync Salesforce data into Google Cloud Platform automatically, so KPIs stay current without anyone touching a spreadsheet.
 
-The goal of this project was to integrate Salesforce data into Google Cloud Platform in order to create a Power BI dashboard. This dashboard enables managers to engage with their teams using key performance indicators.  
+Here's the exposition architecture: how data flows from Salesforce to BigQuery, then out to Power BI.
 
-### Technologies Used  
-- **SQL** : Data extraction, transformation in BigQuery  
-- **Python** : Backend application with Flask to handle API calls and process data  
-- **Terraform** : Infrastructure as Code (IaC) for GCP resources  
-- **DBT** : Data transformation and modeling in BigQuery  
-- **GIT** : Version control for code and infrastructure  
-- **GCP** : BigQuery, Cloud Storage, Cloud Functions, Cloud Run  
-- **Docker** : Containerization for data processing and automation  
+<img src="/assets/archi.png" alt="Data exposure architecture: Salesforce to GCP (BigQuery) to Power BI">
 
-### Salesforce Configuration  
-In order to use the Salesforce API, several configurations have been established. After these configurations were completed, I was able to obtain the necessary information to interact with the API. These elements were securely stored.  
+### The Data
+Salesforce CRM records, synced **every morning**, **tens of thousands of rows per run**, through an incremental ingestion process: the app checks what's already stored in BigQuery before querying Salesforce again, so only new or updated records are pulled.
 
-### Backend Development with Flask
-To interact with the API, I developed a Flask application that interacts with:  
-- The **Salesforce API**  
-- **Google Cloud Platform**  
-- **Securely stored secrets**  
+### Why This Stack
+- **Flask** as a thin API layer between Salesforce, GCP and secret storage. Enough for an orchestrated data sync, no need for a heavier framework.
+- **BigQuery** as the analytical store: serverless, scales with data volume, plugs directly into Power BI.
+- **DBT** to model raw Salesforce exports into business-ready tables. Same logic as any ELT project: keep transformation logic versioned and testable instead of buried in application code.
+- **Terraform** to provision GCP resources as code, so the infrastructure is reproducible and reviewable like any other code change.
+- **Docker** to containerize the processing and automation jobs. A consistent environment between local development and Cloud Run.
+- **Datadog** to monitor API calls and GCP resources. Once data feeds a decision-making dashboard, a silent failure is the real risk.
 
-On Google Cloud Platform, an internal tool was used to streamline the management of GCP integrations.  
+### The Real Challenge
+The trickiest part wasn't the extraction itself, it was making the refresh **incremental without missing or duplicating records**. The application uses the last successful refresh date as a checkpoint and checks BigQuery before querying Salesforce again, instead of re-pulling the entire dataset on every run.
 
-I implemented an **incremental data ingestion** process, ensuring that only new or updated records are retrieved. To achieve this, the application first fetches the stored data from BigQuery before querying Salesforce.  
-
-Additionally, the application retrieves secrets via API calls.  
-
-### Cloud Deployment on GCP 
-On **Google Cloud Platform**, the following processes were implemented:  
-- **Data retrieval**: Initiates the extraction of data.  
-- **Flask application deployment**: Exposes the API for interaction.  
-- **Incremental refresh management**: Sends the last refresh date to the API to ensure incremental updates.  
-
-To manage the infrastructure, **Terraform** was used, with **Cloudcraft** facilitating the integration of Terraform code.  
-
-For data transformation aligned with business needs, **dbt (Data Build Tool)** was utilized.  
-
-Additionally, **Datadog** was implemented to monitor both API calls and GCP resources, ensuring system reliability.  
-
-### Dashboard  
-A **Power BI dashboard** was developed to provide visibility into key performance indicators, enabling better monitoring and decision-making.  
-Using **DAX and Power Query**  
-
-### Architecture  
-<img src="/assets/archi.png" alt="Architecture">
+### Result
+A Power BI dashboard (DAX + Power Query) gives managers real-time visibility on their team's KPIs, fed by an automated pipeline instead of manual exports. [À COMPLÉTER : métrique concrète, ex. gain de temps vs. process manuel, nombre d'utilisateurs actifs du dashboard, ou volume de données synchronisé]
 
 
